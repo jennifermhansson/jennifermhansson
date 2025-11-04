@@ -1,0 +1,27 @@
+name: Generate Snake
+
+on:
+  schedule: 
+    - cron: "0 0 * * *"  # kör varje natt
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v2
+
+      - name: Generate snake.svg
+        uses: Platane/snk@v3
+        with:
+          github_user_name: jennifermhansson   # ÄNDRA till ditt GitHub-namn
+          outputs: |
+            dist/snake.svg
+
+      - name: Push snake.svg to output branch
+        uses: EndBug/add-and-commit@v9
+        with:
+          branch: output
+          message: "Generate snake animation"
+          add: "dist/snake.svg"
