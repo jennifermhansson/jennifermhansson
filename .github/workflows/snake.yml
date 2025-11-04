@@ -6,7 +6,7 @@ on:
   workflow_dispatch:
 
 jobs:
-  generate:
+  build:
     runs-on: ubuntu-latest
     permissions:
       contents: write
@@ -15,26 +15,26 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Generate snake.svg (light mode)
+      - name: Generate light snake
         uses: Platane/snk@v3
         with:
           github_user_name: jennifermhansson
           outputs: |
-            dist/snake.svg
+            snake.svg
 
-      - name: Generate snake-dark.svg (dark mode)
+      - name: Generate dark snake
         uses: Platane/snk@v3
         with:
           github_user_name: jennifermhansson
           outputs: |
-            dist/snake-dark.svg
-          color_snake: "#39FF14"      # neon grön orm
-          color_dots: "#1f1f1f"       # mörk bakgrund
+            snake-dark.svg
+          color_snake: "#39FF14"        # neon grön orm
+          color_dots: "#1d1d1d"         # mörk bakgrund
 
       - name: Push to output branch
         uses: crazy-max/ghaction-github-pages@v3
         with:
           target_branch: output
-          build_dir: dist
+          build_dir: .
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
