@@ -1,40 +1,24 @@
-name: Generate Snake
+name: Generate Dark Snake
 
 on:
-  schedule:
-    - cron: "0 */12 * * *"
   workflow_dispatch:
+  schedule:
+    - cron: "0 */12 * * *"  # kör var 12:e timme
 
 jobs:
-  build:
+  generate:
     runs-on: ubuntu-latest
     permissions:
       contents: write
 
     steps:
-      - name: Checkout
+      - name: Checkout repository
         uses: actions/checkout@v4
-
-      - name: Generate light snake
-        uses: Platane/snk@v3
-        with:
-          github_user_name: jennifermhansson
-          outputs: |
-            snake.svg
 
       - name: Generate dark snake
         uses: Platane/snk@v3
         with:
-          github_user_name: jennifermhansson
+          github_user_name: jennifermhansson   # <-- ändra om ditt namn skiljer sig
           outputs: |
             snake-dark.svg
-          color_snake: "#39FF14"        # neon grön orm
-          color_dots: "#1d1d1d"         # mörk bakgrund
-
-      - name: Push to output branch
-        uses: crazy-max/ghaction-github-pages@v3
-        with:
-          target_branch: output
-          build_dir: .
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          color_snake: "#39FF14"      # neon green
