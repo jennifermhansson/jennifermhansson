@@ -1,31 +1,40 @@
-name: Generate Snake Contribution Grid
+name: Generate Snake
 
 on:
-  workflow_dispatch:
   schedule:
-    - cron: "0 */12 * * *"  # kör var 12:e timme
+    - cron: "0 */12 * * *"
+  workflow_dispatch:
 
 jobs:
   generate:
-    permissions:
-      contents: write    # viktig! ger rätt att pusha
     runs-on: ubuntu-latest
-    
+    permissions:
+      contents: write
+
     steps:
-      - name: Checkout repository
+      - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Generate snake.svg
+      - name: Generate snake.svg (light mode)
         uses: Platane/snk@v3
         with:
-          github_user_name: jennifermhansson   # <-- ändra om du heter annat
+          github_user_name: jennifermhansson
           outputs: |
-            snake.svg
+            dist/snake.svg
+
+      - name: Generate snake-dark.svg (dark mode)
+        uses: Platane/snk@v3
+        with:
+          github_user_name: jennifermhansson
+          outputs: |
+            dist/snake-dark.svg
+          color_snake: "#39FF14"      # neon grön orm
+          color_dots: "#1f1f1f"       # mörk bakgrund
 
       - name: Push to output branch
         uses: crazy-max/ghaction-github-pages@v3
         with:
-          target_branch: output         # filerna läggs här
-          build_dir: .                 # sparas i root av output
+          target_branch: output
+          build_dir: dist
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
