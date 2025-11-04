@@ -8,3 +8,11 @@
 
 ### 🐍 Contribution Snake
 ![Snake animation](https://github.com/jennifermhansson/jennifermhansson/blob/output/snake.svg)
+### 🐍 Contribution Snake
+
+<!-- Light mode -->
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://github.com/jennifermhansson/jennifermhansson/blob/output/dist/snake-dark.svg" />
+  <source media="(prefers-color-scheme: light)" srcset="https://github.com/jennifermhansson/jennifermhansson/blob/output/dist/snake.svg" />
+  <img alt="github contribution snake" src="https://github.com/jennifermhansson/jennifermhansson/blob/output/dist/snake.svg" />
+</picture>
