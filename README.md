@@ -6,6 +6,8 @@
 
 <img src="https://skillicons.dev/icons?i=js,react,css,html,firebase,git,github,vite,figma" />
 
+![Snake animation](https://github.com/jennifermhansson/jennifermhansson/blob/output/snake.svg)
+
 <!--
 **jennifermhansson/jennifermhansson** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
