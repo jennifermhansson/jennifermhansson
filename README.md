@@ -6,5 +6,9 @@
 
 <img src="https://skillicons.dev/icons?i=js,react,css,html,firebase,git,github,vite,figma" />
 
-### 🐍 Contribution Snake
-![Snake animation](https://github.com/jennifermhansson/jennifermhansson/blob/output/snake.svg)
+<!-- Light mode -->
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://github.com/jennifermhansson/jennifermhansson/blob/output/dist/snake-dark.svg" />
+  <source media="(prefers-color-scheme: light)" srcset="https://github.com/jennifermhansson/jennifermhansson/blob/output/dist/snake.svg" />
+  <img alt="github contribution snake" src="https://github.com/jennifermhansson/jennifermhansson/blob/output/dist/snake.svg" />
+</picture>
