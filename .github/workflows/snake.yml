@@ -17,7 +17,7 @@ jobs:
         with:
           github_user_name: jennifermhansson   # ÄNDRA till ditt GitHub-namn
           outputs: |
-            dist/snake.svg
+            snake.svg
 
       - name: Push snake.svg to output branch
         uses: EndBug/add-and-commit@v9
