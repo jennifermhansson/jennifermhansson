@@ -6,7 +6,5 @@
 
 <img src="https://skillicons.dev/icons?i=js,react,css,html,firebase,git,github,vite,figma" />
 
-### 🐍 Contribution Snake (Dark Mode)
-
 ![Dark Snake](https://github.com/jennifermhansson/jennifermhansson/blob/output/snake-dark.svg)
 
