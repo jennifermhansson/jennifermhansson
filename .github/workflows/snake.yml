@@ -1,33 +1,31 @@
-name: Generate Snake
+name: Generate Snake Contribution Grid
 
 on:
+  workflow_dispatch:
   schedule:
     - cron: "0 */12 * * *"  # kör var 12:e timme
-  workflow_dispatch:
 
 jobs:
-  build:
-    name: generate snake
-    runs-on: ubuntu-latest
-
+  generate:
     permissions:
-      contents: write
-
+      contents: write    # viktig! ger rätt att pusha
+    runs-on: ubuntu-latest
+    
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Generate the snake
-        uses: Platane/snk/svg-only@v3
+      - name: Generate snake.svg
+        uses: Platane/snk@v3
         with:
-          github_user_name: jennifermhansson   # <-- ändra till ditt användarnamn
+          github_user_name: jennifermhansson   # <-- ändra om du heter annat
           outputs: |
-            dist/snake.svg
+            snake.svg
 
-      - name: Push the snake.svg file to output branch
+      - name: Push to output branch
         uses: crazy-max/ghaction-github-pages@v3
         with:
-          target_branch: output
-          build_dir: dist
+          target_branch: output         # filerna läggs här
+          build_dir: .                 # sparas i root av output
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
