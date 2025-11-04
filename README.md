@@ -7,5 +7,4 @@
 <img src="https://skillicons.dev/icons?i=js,react,css,html,firebase,git,github,vite,figma" />
 
 ### 🐍 Contribution Snake
-
-![Snake animation](https://github.com/jennifermhansson/jennifermhansson/blob/output/dist/snake.svg)
+![Snake animation](https://github.com/jennifermhansson/jennifermhansson/blob/output/snake.svg)
