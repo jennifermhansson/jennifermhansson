@@ -6,5 +6,8 @@
 
 <img src="https://skillicons.dev/icons?i=js,react,css,html,firebase,git,github,vite,figma" />
 
-![Dark Snake](https://github.com/jennifermhansson/jennifermhansson/blob/output/snake-dark.svg)
-
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="github-snake-dark.svg" />
+  <source media="(prefers-color-scheme: light)" srcset="github-snake.svg" />
+  <img alt="github-snake" src="github-snake.svg" />
+</picture>
