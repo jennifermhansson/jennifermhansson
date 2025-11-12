@@ -11,6 +11,6 @@ Take a look at my [portfolio website](https://jennifermhansson.github.io/portfol
 ### <p align="center"> Tech stack soo far: </p>
 <p align="center">
 
-<img src="https://skillicons.dev/icons?i=js,react,css,html,firebase,git,github,vite,figma" />
+<img src="https://skillicons.dev/icons?i=ts,js,react,css,html,firebase,git,github,vite,figma" />
 </p>
 
