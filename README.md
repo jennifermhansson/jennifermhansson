@@ -6,7 +6,7 @@
 I’m currently studying Fullstack Development Open Source. I've started with front-end, but I’m eager to dive into backend and understand the full architecture behind modern web applications
 </p>
 
-## Take a look at my [portfolio website](https://jennifermhansson.github.io/portfolio/)
+## Take a look at my [portfolio website](https://jenniferh.dev)
 
 ### <p align="center"> Tech stack soo far: </p>
 <p align="center">
