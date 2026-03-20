@@ -8,7 +8,8 @@ I’m currently studying Fullstack Development Open Source. Im eager to learn an
 
 ## Take a look at my [portfolio website](https://jenniferh.dev)
 
-[![GitHub stats](https://github-readme-stats.vercel.app/api?username=jennifermhansson)](https://github.com/jennifermhansson/github-readme-stats)
+![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=jennifermhansson&theme=tokyonight)
+
 
 ### <p align="center"> Tech stack soo far: </p>
 <p align="center">
