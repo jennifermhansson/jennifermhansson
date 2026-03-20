@@ -5,12 +5,13 @@
 <p align"center">
 I’m currently studying Fullstack Development Open Source. Im eager to learn and understand the full architecture behind modern web applications, hoping to become a a great developer. 
 </p>
-
 ## Take a look at my [portfolio website](https://jenniferh.dev)
+
+
 
 ### <p align="center"> Tech stack soo far: </p>
 <p align="center">
 
-<img src="https://skillicons.dev/icons?i=vscode,ts,js,react,css,tailwind,html,firebase,git,github,gitlab,react,figma,supabase,firebase,bun,nodejs,php,postgres,,mongodb,docker,cypress" />
+<img src="https://skillicons.dev/icons?i=vscode,ts,js,react,css,tailwind,html,firebase,git,github,gitlab,react,figma,supabase,firebase,bun,nodejs,php,postgres,mongodb,docker,cypress" />
 </p>
 
