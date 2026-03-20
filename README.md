@@ -8,10 +8,9 @@ I’m currently studying Fullstack Development Open Source. Im eager to learn an
 
 ## Take a look at my [portfolio website](https://jenniferh.dev)
 
-![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=jennifermhansson&theme=tokyonight)
+![Stats](https://github-readme-stats.vercel.app/api?username=jennifermhansson&show_icons=true&theme=tokyonight&hide_border=true)
+[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=jennifermhansson&layout=compact&langs_count=8&theme=tokyonight&hide_border=true)](https://github.com/jennifermhansson/github-readme-stats-academic)
 
-
-### <p align="center"> Tech stack soo far: </p>
 <p align="center">
 
 <img src="https://skillicons.dev/icons?i=vscode,ts,js,react,css,tailwind,html,firebase,git,github,gitlab,react,figma,supabase,firebase,bun,nodejs,php,postgres,mongodb,docker,cypress" />
