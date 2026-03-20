@@ -5,6 +5,7 @@
 <p align"center">
 I’m currently studying Fullstack Development Open Source. Im eager to learn and understand the full architecture behind modern web applications, hoping to become a a great developer. 
 </p>
+
 ## Take a look at my [portfolio website](https://jenniferh.dev)
 
 
